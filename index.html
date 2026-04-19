@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>鹤王 - 开启全自动鲜面时代</title>
+    <style>
+        .glass-card { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(10px
+); }
+        .hero-gradient { background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.1
+)); }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <nav class="fixed w-full z-50 p-6 flex justify-between items-center text-white mix-blend-difference">
+        <div class="text-2xl font-black tracking-widest">鹤王 | HE WANG</div>
+        <div class="space-x-6 text-sm">
+            <a href="#features">核心技术</a>
+            <a href="#gallery">产品美学</a>
+            <a href="#specs">参数</a>
+        </div>
+    </nav>
+
+    <div class="relative h-screen w-full overflow-hidden bg-black">
+        <video autoplay muted loop playsinline class="absolute w-full h-full object-cover opacity-80">
+            <source src="hero.mp4" type="video/mp4">
+        </video>
+        
+        <div class="absolute inset-0 hero-gradient flex items-center">
+            <div class="max-w-7xl mx-auto px-10">
+                <h1 class="text-6xl md:text-8xl font-bold text-white mb-6">筋道<br>如指尖亲揉</h1>
+                <p class="text-xl text-gray-300 max-w-lg mb-8 leading-relaxed">
+                    鹤王全自动面条机，传承千年面食精髓。5分钟自动出面，还原那碗有温度的家乡味道。
+                </p>
+                <a href="#gallery" class="inline-block bg-white text-black px-10 py-4 rounded-sm font-bold tracking-widest hover:bg-orange-500 hover:text-white transition">探索工艺</a>
+            </div>
+        </div>
+    </div>
+
+    <section id="gallery" class="py-24 max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-light tracking-widest text-gray-800">匠心细节</h2>
+            <div class="h-1 w-20 bg-orange-500 mx-auto mt-4"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="group overflow-hidden rounded-lg shadow-xl">
+                <img src="pic1.webp" alt="外观展示" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+            </div>
+            <div class="grid grid-cols-1 gap-4 text-white">
+                <div class="bg-gray-800 p-12 rounded-lg flex flex-col justify-center">
+                    <h3 class="text-3xl font-bold mb-4">智控触屏</h3>
+                    <p class="text-gray-400">一键开启，水面比例精准把控，老人也能轻松上手。</p>
+                </div>
+                <div class="group overflow-hidden rounded-lg shadow-xl">
+                    <img src="pic2.webp" alt="模具展示" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="bg-white py-20 border-t">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-16">
+            <div class="text-center">
+                <span class="text-5xl">🍶</span>
+                <h4 class="text-xl font-bold mt-6 mb-2">航空级合金搅拌杆</h4>
+                <p class="text-gray-500 text-sm">360度强力旋转，深度穿透每一粒面粉。</p>
+            </div>
+            <div class="text-center">
+                <span class="text-5xl">🌾</span>
+                <h4 class="text-xl font-bold mt-6 mb-2">多模具成型</h4>
+                <p class="text-gray-500 text-sm">细面、宽面、空心面，一机解决全家胃口。</p>
+            </div>
+            <div class="text-center">
+                <span class="text-5xl">🛡️</span>
+                <h4 class="text-xl font-bold mt-6 mb-2">食品级材质保障</h4>
+                <p class="text-gray-500 text-sm">所有接触部件均符合国家食品安全标准。</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
